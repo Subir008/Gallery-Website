@@ -1,2 +1,39 @@
 @import url(https://coolors.co/palette/fb6107-f3de2c-7cb518-5c8001-fbb02d);
 @import url(https://fonts.google.com/specimen/Playwrite+HR+Lijeva);
+
+body, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #f5e2c8 ;
+}
+
+nav {
+    background-color: #ffd29d;
+    
+}
+
+nav form{
+    float: right;
+    margin-top: 0.75rem;
+    margin-right: 0.75rem;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.title{
+    display: inline-block;
+
+}
+
+.logo {
+    height: 30px;
+    padding-left: 0.75rem;
+    padding: 0.75rem;
+}
+
+
