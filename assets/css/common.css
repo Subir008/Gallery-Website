@@ -1,14 +1,22 @@
 @import url(https://coolors.co/palette/fb6107-f3de2c-7cb518-5c8001-fbb02d);
 @import url(https://fonts.google.com/specimen/Playwrite+HR+Lijeva);
+@import 'colors.css';
 
-body, h1, h2, h3, h4, h5, h6 {
+body, h1, h2, h3, h4, h5, h6, p {
     padding: 0;
     margin: 0;
+    font-family: 'Playwrite HR Lijeva', cursive;
 }
 
 body{
     background-color: #f5e2c8 ;
+    /* background-color: #d4a373 ; */
+    position: relative;
+    min-height:calc(100vh - 5rem);
+    padding-bottom: 5rem !important;
 }
+
+/* Navbar Start */
 
 nav {
     background-color: #ffd29d;
@@ -17,8 +25,9 @@ nav {
 
 nav form{
     float: right;
-    margin-top: 0.75rem;
+    margin-top: 0.6rem;
     margin-right: 0.75rem;
+
 }
 
 nav a {
@@ -27,13 +36,54 @@ nav a {
 
 .title{
     display: inline-block;
-
+    text-transform: uppercase;
+    position: relative;
+    top: -8px;
+    font-size: 25px;
+    color: #fb8500;
 }
 
-.logo {
-    height: 30px;
+nav .logo {
+    height: 37px;
     padding-left: 0.75rem;
-    padding: 0.75rem;
+    padding-top: 0.5rem;
 }
 
+nav .input{
+    /* padding: 0.3rem; */
+    font-family: 'Playwrite HR Lijeva', cursive;
+    padding: 5px 16px;
+}
 
+.input:focus{
+    outline: none;
+    border: 2px solid #fb5607;
+}
+
+/* Navbar End */
+
+.heading{
+    text-align: center;
+    font-size: 30px;
+    margin: 0.75rem ;
+}
+
+/* Footer Start */
+
+footer{
+    position: absolute;
+    background-color: #ffd29d ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem;
+    bottom: 0px;
+    width: calc(100% - 1.5rem );
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/* Footer End */
