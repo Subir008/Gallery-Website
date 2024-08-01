@@ -13,7 +13,7 @@ window.onload = function () {
     
     
     // If search_param is present then show the output
-    fetch(`https://api.unsplash.com/search/photos?per_page=25&query=${search_params.get('search')}&client_id=${API_Key}`).then(convert_to_json)
+    fetch(`https://api.unsplash.com/search/photos?per_page=40&query=${search_params.get('search')}&client_id=${API_Key}`).then(convert_to_json)
     .then(function (data) {
         generateCard(data.results);
 
@@ -49,7 +49,7 @@ function generateCard(data) {
         // console.log(single_data.urls.thumb);
         img.src = single_data.urls.thumb;
 
-        // console.log(img);
+        // Appending the elemnents
         anchor.appendChild(img);
         card.appendChild(anchor);
         container.appendChild(card);
