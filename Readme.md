@@ -1,5 +1,9 @@
 ## WEB-GALLERY || A GALLLERY WEBSITE
 
+It is a dynamic gallery website where users can search for any images and receive results accordingly.
+
+[Click Here For Demo](https://)
+
 ### TECHNOLOGY USED
  * HTML
  * CSS
