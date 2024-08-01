@@ -2,7 +2,7 @@
 
 It is a dynamic gallery website where users can search for any images and receive results accordingly.
 
-[Click Here For Demo](https://)
+[Click Here For Demo](https://gallerygaze.netlify.app/)
 
 ### TECHNOLOGY USED
  * HTML
