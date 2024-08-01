@@ -17,7 +17,7 @@
         <a href="index.html"><img src="assets/images/camera-logo.png" alt="Logo" class="logo"></a>
         <a href="index.html"><h4 class="title">Web Gallery</h4></a>
         <form action="search.html" method="get">
-            <input type="text" placeholder="Search Anything" name="search" class="input" autocomplete="off">
+            <input type="text" placeholder="Search Anything" name="search" id="search_field" class="input" autocomplete="off">
             <input type="submit" class="input" value="Search">
         </form>
      </nav>
@@ -27,6 +27,28 @@
      <section>
         <h2 class="heading">Details For - <span id="detail"></span></h2>
         <div class="container" id="image_container">
+            <div class="col-1">
+                <img id="detail_img" src="" alt="Result">
+            </div>
+            <div class="col-2">
+                <h2 class="description"><span id="desc"></span></h2> 
+                <br>
+                <h1>Uploaded By - @ <span id="username"></span> </h1>
+                <p><strong> Uploaded Date - </strong> <span id="date"></span></p>
+                <h4><span id="likes"></span>Likes (<span id="views"></span> Views ) </h4>
+                <br>
+                <hr>
+                <br>
+                <h2 id="alt_desc" class="description"></h2>
+                <br>
+                <h3>Base Color</h3>
+                <div id="color-box" class="color-box"></div>
+                <br>
+                <br>
+                <br>
+                <a target="_blank" class="button" id="download-button">&nbsp;&nbsp; Download &nbsp;&nbsp;</a>
+            </div>
+        </div>
 
      </section>
     <!-- Section End -->
