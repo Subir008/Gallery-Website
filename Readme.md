@@ -9,8 +9,44 @@ It is a dynamic gallery website where users can search for any images and receiv
  * CSS
  * JavaScript
 
-### API USED
+## API Reference
+
  * Unsplash API
+
+#### Get a photo
+
+Retrieve a single photo.
+
+```http
+  GET /photos/:id
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `id`      | `string` | **Required** The photo’s ID .|
+
+#### List photos
+
+```http
+  GET /photos
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `page`    | `string` |  Page number to retrieve. (Optional; default: 1) |
+|`per_page` | `string` |  Number of items per page. (Optional; default: 10) |
+|`order_by`| `string`	| How to sort the photos. Optional. (Valid values: latest, oldest, popular; default: latest)|
+
+#### Search photos
+Get a single page of photo results for a query.
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+|`query	`   | `string` | Search terms.					   |
+| `page`    | `string` |  Page number to retrieve. (Optional; default: 1) |
+|`per_page` | `string` |  Number of items per page. (Optional; default: 10) |
+|`order_by`| `string`	| How to sort the photos. Optional. (Valid values: latest, oldest, popular; default: latest)|
+
 
  ### COLOR PALATTE
 
